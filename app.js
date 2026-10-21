@@ -61,9 +61,11 @@
     if (C.appStoreUrl) L.unshift(["lnk_appstore", C.appStoreUrl]);
     if (C.playUrl) L.unshift(["lnk_play", C.playUrl]);
     if (C.actUrl) L.unshift(["lnk_act", C.actUrl]);
+    L.unshift(["lnk_actdoc", "docs/Miraj-AI-Act-" + lang + ".docx"]);
     document.getElementById("links").innerHTML = L.map(function (l) {
       var ext = /^https?:/.test(l[1]);
-      return "<a class='btn s' href='" + l[1] + "'" + (ext ? " target='_blank' rel='noopener'" : "") + ">" + t(l[0]) + "</a>";
+      var dl = /\.docx$/.test(l[1]) ? " download" : "";
+      return "<a class='btn s' href='" + l[1] + "'" + dl + (ext ? " target='_blank' rel='noopener'" : "") + ">" + t(l[0]) + "</a>";
     }).join("");
   }
 
@@ -127,6 +129,7 @@
     document.querySelectorAll("[data-i]").forEach(function (el) { el.textContent = t(el.getAttribute("data-i")); });
     document.querySelectorAll(".lang button").forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.lang === lang)); });
     renderFeatures(); renderLinks(); renderArch(); renderEcon();
+    var ab = document.getElementById("actBtn"); if (ab) ab.href = "docs/Miraj-AI-Act-" + lang + ".docx";
     var m = document.getElementById("apkMeta");
     if (m) m.textContent = t("dl_modal_meta").replace("{v}", C.apkVersion || "").replace("{s}", C.apkSize || "").replace("{m}", C.apkMinAndroid || "");
   }

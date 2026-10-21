@@ -1,9 +1,31 @@
 {
   "cleanUrls": true,
   "headers": [
-    { "source": "/downloads/(.*)", "headers": [
-      { "key": "Content-Type", "value": "application/vnd.android.package-archive" },
-      { "key": "Content-Disposition", "value": "attachment" }
-    ] }
+    {
+      "source": "/downloads/(.*)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/vnd.android.package-archive"
+        },
+        {
+          "key": "Content-Disposition",
+          "value": "attachment"
+        }
+      ]
+    },
+    {
+      "source": "/docs/(.*)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "key": "Content-Disposition",
+          "value": "attachment"
+        }
+      ]
+    }
   ]
 }
