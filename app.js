@@ -76,28 +76,7 @@
     if (ios) ios.textContent = "iOS"; if (and) and.textContent = "Android";
   }
 
-  function renderAI() {
-    // pipeline: six steps, arrows between them
-    var svg = document.getElementById("pipe"); if (!svg) return;
-    var w = 134, gap = 19.2, out = "";
-    for (var i = 1; i <= 6; i++) {
-      var x = (i - 1) * (w + gap);
-      out += "<rect class='pb' x='" + x + "' y='30' width='" + w + "' height='70' rx='14'/>";
-      out += "<text class='pt' x='" + (x + w / 2) + "' y='60'>" + t("pl" + i) + "</text>";
-      out += "<text class='ph' x='" + (x + w / 2) + "' y='82'>" + t("pl" + i + "h") + "</text>";
-      if (i < 6) out += "<path class='arrow' d='M" + (x + w + 2) + " 65 L" + (x + w + gap - 5) + " 65 M" + (x + w + gap - 10) + " 60 L" + (x + w + gap - 4) + " 65 L" + (x + w + gap - 10) + " 70'/>";
-    }
-    svg.innerHTML = out;
-
-    var useL = "", noL = "";
-    for (var k = 1; k <= 4; k++) { useL += "<li>" + t("use" + k) + "</li>"; noL += "<li>" + t("no" + k) + "</li>"; }
-    var rows = "";
-    for (var r = 1; r <= 7; r++) rows += "<tr><td>" + t("dt" + r + "a") + "</td><td>" + t("dt" + r + "b") + "</td><td>" + t("dt" + r + "c") + "</td></tr>";
-    document.getElementById("aiTables").innerHTML =
-      "<h3 class='sub3'>" + t("use_title") + "</h3><div class='cmp'><div class='card'><h3>" + t("use_h1") + "</h3><ul class='list f'>" + useL + "</ul></div>" +
-      "<div class='card'><h3>" + t("use_h2") + "</h3><ul class='list n'>" + noL + "</ul></div></div>" +
-      "<div class='tw'><h3 class='sub3'>" + t("dt_title") + "</h3><table><thead><tr><th>" + t("dt_h1") + "</th><th>" + t("dt_h2") + "</th><th>" + t("dt_h3") + "</th></tr></thead><tbody>" + rows + "</tbody></table></div>";
-  }
+  function renderAI() { if (window.MirajAI) window.MirajAI.render(t); }
 
   function renderDownloads() {
     var ios = document.getElementById("storeIos"), and = document.getElementById("storeAnd");

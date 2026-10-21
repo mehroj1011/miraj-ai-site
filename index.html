@@ -132,23 +132,26 @@
     </svg>
   </div>
   <ul class="list" style="margin-top:14px"><li data-i="tech_n1"></li><li data-i="tech_n2"></li></ul>
-  <h3 class="sub3" data-i="ai_title"></h3>
-  <p class="lead2" data-i="ai_lead"></p>
-  <div class="cards">
-    <div class="card"><h3 data-i="ai_c1_t"></h3><p data-i="ai_c1_d"></p></div>
-    <div class="card"><h3 data-i="ai_c2_t"></h3><p data-i="ai_c2_d"></p></div>
-    <div class="card"><h3 data-i="ai_c3_t"></h3><p data-i="ai_c3_d"></p></div>
+  <div id="aiSuite">
+    <h3 class="sub3" data-i="lc_title"></h3><p class="lead2" data-i="lc_lead"></p>
+    <div id="lifecycle"></div>
+    <h3 class="sub3" data-i="ce_title"></h3><p class="lead2" data-i="ce_lead"></p>
+    <div class="cards" id="ceCards"></div>
+    <div class="note" data-i="ce_note"></div>
+    <h3 class="sub3" data-i="cmp_title"></h3>
+    <div id="cmp"></div>
+    <h3 class="sub3" data-i="ds_title"></h3><p class="lead2" data-i="ds_lead"></p>
+    <div class="cards two-up" id="dsCards"></div>
+    <div class="card nt"><h3 data-i="nt_title"></h3><ul class="list n"><li data-i="nt1"></li><li data-i="nt2"></li><li data-i="nt3"></li><li data-i="nt4"></li></ul></div>
+    <h3 class="sub3" data-i="wf_title"></h3>
+    <div class="warnbox"><b data-i="wf_badge"></b></div>
+    <div id="wf"></div>
+    <p class="small" data-i="wf_note"></p>
+    <h3 class="sub3" data-i="ev_title"></h3>
+    <div id="ev"></div>
+    <h3 class="sub3" data-i="sm_title"></h3>
+    <div class="tw" id="smTable"></div>
   </div>
-  <h3 class="sub3" data-i="pl_title"></h3>
-  <div class="arch">
-    <svg viewBox="0 0 900 150" role="img" aria-label="pipeline" id="pipe"></svg>
-  </div>
-  <p class="small" data-i="pl_note"></p>
-  <div id="aiTables"></div>
-  <h3 class="sub3" data-i="bt_title"></h3>
-  <p class="lead2" data-i="bt_lead"></p>
-  <div class="card"><ul class="list f"><li data-i="bt1"></li><li data-i="bt2"></li><li data-i="bt3"></li><li data-i="bt4"></li></ul></div>
-  <div class="note" data-i="bt_note"></div>
 
 </div></section>
 
@@ -175,6 +178,8 @@
 <noscript><p style="padding:20px">Please enable JavaScript to view this page.</p></noscript>
 <script src="config.js"></script>
 <script src="i18n.js"></script>
+<script src="i18n-ai.js"></script>
+<script src="ai-section.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
