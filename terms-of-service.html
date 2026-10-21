@@ -1,0 +1,192 @@
+<title>Terms of Service</title>
+<style>
+  :root {
+    --ink: #1c2033;
+    --ink-soft: #565c74;
+    --line: #e3e2ee;
+    --bg: #faf9fc;
+    --surface: #ffffff;
+    --accent: #5b5ce0;
+    --accent-soft: #eeeeff;
+    --accent-2: #7c4dd6;
+    --warn: #b3591d;
+    --warn-soft: #fdf0e4;
+    --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+    --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #eceaf7; --ink-soft: #a9a7c4; --line: #302f47;
+      --bg: #121026; --surface: #191730; --accent: #9a9bff; --accent-soft: #232047; --accent-2: #c39bff;
+      --warn: #ffb877; --warn-soft: #2b2015;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #eceaf7; --ink-soft: #a9a7c4; --line: #302f47;
+    --bg: #121026; --surface: #191730; --accent: #9a9bff; --accent-soft: #232047; --accent-2: #c39bff;
+    --warn: #ffb877; --warn-soft: #2b2015;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    padding: 0 20px 64px;
+    line-height: 1.65;
+  }
+  a { color: var(--accent); }
+
+  .top { max-width: 720px; margin: 0 auto; padding-top: 56px; }
+  .eyebrow {
+    font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+    color: var(--accent-2); display: flex; align-items: center; gap: 10px;
+  }
+  .eyebrow::before {
+    content: ""; width: 22px; height: 22px; border-radius: 7px;
+    background: linear-gradient(135deg, var(--accent), var(--accent-2)); display: inline-block;
+  }
+  h1 { font-family: var(--serif); font-size: clamp(32px, 6vw, 44px); font-weight: 600; margin: 14px 0 6px; text-wrap: balance; }
+  .updated { color: var(--ink-soft); font-size: 14px; margin-bottom: 28px; }
+  .lede { font-size: 17px; color: var(--ink-soft); max-width: 60ch; margin-bottom: 8px; }
+
+  .callout {
+    max-width: 720px;
+    margin: 28px auto 0;
+    background: var(--warn-soft);
+    border: 1px solid color-mix(in srgb, var(--warn) 30%, transparent);
+    border-radius: 16px;
+    padding: 18px 20px;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+  }
+  .callout .icon {
+    font-size: 20px; line-height: 1; flex: none;
+  }
+  .callout p { margin: 0; font-size: 14.5px; color: var(--ink); }
+  .callout strong { color: var(--warn); }
+
+  nav.toc {
+    max-width: 720px; margin: 28px auto 8px; background: var(--surface);
+    border: 1px solid var(--line); border-radius: 16px; padding: 18px 22px;
+  }
+  nav.toc p { margin: 0 0 10px; font-size: 12px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-soft); }
+  nav.toc ol { columns: 2; column-gap: 24px; margin: 0; padding: 0; list-style: none; }
+  nav.toc li { break-inside: avoid; margin-bottom: 7px; }
+  nav.toc a { text-decoration: none; color: var(--ink); font-size: 14.5px; }
+  nav.toc a:hover { color: var(--accent); }
+
+  main { max-width: 720px; margin: 0 auto; }
+  section { padding: 36px 0; border-bottom: 1px solid var(--line); }
+  section:last-of-type { border-bottom: none; }
+  section h2 {
+    font-family: var(--serif); font-size: 23px; font-weight: 600; margin: 0 0 4px;
+    display: flex; align-items: baseline; gap: 10px;
+  }
+  section h2 .n { color: var(--accent); font-family: var(--sans); font-size: 14px; font-weight: 700; font-variant-numeric: tabular-nums; }
+  section p { margin: 12px 0; color: var(--ink); }
+  section p.soft { color: var(--ink-soft); font-size: 15px; }
+  section ul { margin: 12px 0; padding-left: 20px; }
+  section li { margin-bottom: 8px; }
+
+  footer { max-width: 720px; margin: 40px auto 0; color: var(--ink-soft); font-size: 13.5px; }
+</style>
+
+<div class="top">
+  <div class="eyebrow">Psychologist Max</div>
+  <h1>Terms of Service</h1>
+  <p class="updated">Last updated: September 22, 2026</p>
+  <p class="lede">These are the terms you agree to by creating an account in Psychologist Max. We've tried to write them the way we'd want to read them.</p>
+</div>
+
+<div class="callout">
+  <div class="icon">⚕️</div>
+  <p><strong>Psychologist Max is not a medical device or emergency service.</strong> The AI coach offers wellbeing support, not diagnosis or treatment. If you're in crisis, please contact your local emergency number or a crisis line right away.</p>
+</div>
+
+<nav class="toc" aria-label="Table of contents">
+  <p>On this page</p>
+  <ol>
+    <li><a href="#account">1. Your account</a></li>
+    <li><a href="#service">2. What the app is — and isn't</a></li>
+    <li><a href="#psychologists">3. Sessions with licensed psychologists</a></li>
+    <li><a href="#conduct">4. Community &amp; conduct</a></li>
+    <li><a href="#content">5. Your content, our license</a></li>
+    <li><a href="#subscriptions">6. Subscriptions &amp; purchases</a></li>
+    <li><a href="#ip">7. Intellectual property</a></li>
+    <li><a href="#disclaimer">8. Disclaimers</a></li>
+    <li><a href="#liability">9. Limitation of liability</a></li>
+    <li><a href="#changes">10. Changes &amp; termination</a></li>
+    <li><a href="#law">11. Governing law</a></li>
+    <li><a href="#contact">12. Contact us</a></li>
+  </ol>
+</nav>
+
+<main>
+  <section id="account">
+    <h2><span class="n">01</span> Your account</h2>
+    <p>You must be 17 or older to use Psychologist Max. You're responsible for the accuracy of the information you provide and for keeping your login credentials secure. One person, one account — don't share credentials or create accounts on behalf of others without permission.</p>
+  </section>
+
+  <section id="service">
+    <h2><span class="n">02</span> What the app is — and isn't</h2>
+    <p>Psychologist Max provides an AI‑powered coach, mood tracking, guided exercises, and optional access to licensed psychologists. The AI features (chat, diagnostics, daily plans, growth plans) are automated and are <strong>not a substitute for professional medical, psychological, or psychiatric care</strong>. They don't diagnose conditions or prescribe treatment.</p>
+    <p class="soft">Use your judgment, and seek a licensed professional for anything the app itself can't safely handle.</p>
+  </section>
+
+  <section id="psychologists">
+    <h2><span class="n">03</span> Sessions with licensed psychologists</h2>
+    <p>Psychologists listed in the app are independent professionals, not our employees. We facilitate the booking and payment where applicable; the professional relationship and the quality of care are between you and them. Cancellation and rescheduling follow the policy shown at booking time.</p>
+  </section>
+
+  <section id="conduct">
+    <h2><span class="n">04</span> Community &amp; conduct</h2>
+    <p>Peer conversations in "Find People" are moderated for safety, but you're still expected to treat others with respect. Don't use the app to harass, solicit, spam, or share content that could put someone at risk. We may suspend accounts that violate this.</p>
+  </section>
+
+  <section id="content">
+    <h2><span class="n">05</span> Your content, our license</h2>
+    <p>You own what you write, upload, or say to the app. By using it, you grant us a limited license to store and process that content solely to provide the service to you — generate responses, build your plan, show your profile to a psychologist you book with, and similar. We don't use your private content to train third‑party models, and we don't sell it.</p>
+  </section>
+
+  <section id="subscriptions">
+    <h2><span class="n">06</span> Subscriptions &amp; purchases</h2>
+    <p>Some features may be offered as paid subscriptions, billed through the App Store under Apple's standard terms. Prices, trial periods, and renewal terms are shown before purchase. Manage or cancel a subscription any time in your device's App Store account settings.</p>
+  </section>
+
+  <section id="ip">
+    <h2><span class="n">07</span> Intellectual property</h2>
+    <p>The app's design, code, and branding belong to us or our licensors. Nothing here transfers ownership of that to you; you get a personal, non‑transferable license to use the app under these terms.</p>
+  </section>
+
+  <section id="disclaimer">
+    <h2><span class="n">08</span> Disclaimers</h2>
+    <p>The app is provided "as is." AI‑generated content can be inaccurate or incomplete — verify anything important, especially health‑related guidance, with a qualified professional. We don't guarantee the service will be uninterrupted or error‑free.</p>
+  </section>
+
+  <section id="liability">
+    <h2><span class="n">09</span> Limitation of liability</h2>
+    <p>To the extent permitted by law, we aren't liable for indirect, incidental, or consequential damages arising from your use of the app. Nothing here limits liability where the law doesn't allow it to be limited.</p>
+  </section>
+
+  <section id="changes">
+    <h2><span class="n">10</span> Changes &amp; termination</h2>
+    <p>We may update these terms as the app evolves — meaningful changes will be reflected here with a new date. You can delete your account at any time from Profile settings. We may suspend or terminate accounts that violate these terms or put other users at risk.</p>
+  </section>
+
+  <section id="law">
+    <h2><span class="n">11</span> Governing law</h2>
+    <p>These terms are governed by the laws of the jurisdiction in which the app publisher is registered, without regard to conflict‑of‑law principles, except where local consumer‑protection law requires otherwise.</p>
+  </section>
+
+  <section id="contact">
+    <h2><span class="n">12</span> Contact us</h2>
+    <p>Questions about these terms:</p>
+    <p><a href="mailto:support@psychologistmax.app">support@psychologistmax.app</a></p>
+  </section>
+</main>
+
+<footer>
+  © 2026 Psychologist Max. See also our <a href="https://claude.ai/artifact/UUu6VD7xH6hSagzrofsqMd">Privacy Policy</a>.
+</footer>

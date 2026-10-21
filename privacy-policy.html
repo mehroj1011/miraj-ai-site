@@ -1,0 +1,296 @@
+<title>Privacy Policy - Miraj</title>
+<style>
+  :root {
+    --ink: #1c2033;
+    --ink-soft: #565c74;
+    --line: #e3e2ee;
+    --bg: #faf9fc;
+    --surface: #ffffff;
+    --accent: #5b5ce0;
+    --accent-soft: #eeeeff;
+    --accent-2: #7c4dd6;
+    --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+    --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #eceaf7; --ink-soft: #a9a7c4; --line: #302f47;
+      --bg: #121026; --surface: #191730; --accent: #9a9bff; --accent-soft: #232047; --accent-2: #c39bff;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #eceaf7; --ink-soft: #a9a7c4; --line: #302f47;
+    --bg: #121026; --surface: #191730; --accent: #9a9bff; --accent-soft: #232047; --accent-2: #c39bff;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    padding: 0 20px 64px;
+    line-height: 1.65;
+  }
+  a { color: var(--accent); }
+
+  .top {
+    max-width: 720px;
+    margin: 0 auto;
+    padding-top: 56px;
+  }
+  .eyebrow {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--accent-2);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .eyebrow::before {
+    content: "";
+    width: 22px; height: 22px;
+    border-radius: 7px;
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+    display: inline-block;
+  }
+  h1 {
+    font-family: var(--serif);
+    font-size: clamp(32px, 6vw, 44px);
+    font-weight: 600;
+    margin: 14px 0 6px;
+    text-wrap: balance;
+  }
+  .updated {
+    color: var(--ink-soft);
+    font-size: 14px;
+    margin-bottom: 28px;
+  }
+  .lede {
+    font-size: 17px;
+    color: var(--ink-soft);
+    max-width: 60ch;
+    margin-bottom: 8px;
+  }
+
+  nav.toc {
+    max-width: 720px;
+    margin: 32px auto 8px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 18px 22px;
+  }
+  nav.toc p {
+    margin: 0 0 10px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+  nav.toc ol {
+    columns: 2;
+    column-gap: 24px;
+    margin: 0; padding: 0;
+    list-style: none;
+    counter-reset: toc;
+  }
+  nav.toc li { break-inside: avoid; margin-bottom: 7px; }
+  nav.toc a {
+    text-decoration: none;
+    color: var(--ink);
+    font-size: 14.5px;
+  }
+  nav.toc a:hover { color: var(--accent); }
+
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  section {
+    padding: 36px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  section:last-of-type { border-bottom: none; }
+  section h2 {
+    font-family: var(--serif);
+    font-size: 23px;
+    font-weight: 600;
+    margin: 0 0 4px;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+  section h2 .n {
+    color: var(--accent);
+    font-family: var(--sans);
+    font-size: 14px;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+  }
+  section p { margin: 12px 0; color: var(--ink); }
+  section p.soft { color: var(--ink-soft); font-size: 15px; }
+  section ul { margin: 12px 0; padding-left: 20px; }
+  section li { margin-bottom: 8px; }
+
+  table.data {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 14.5px;
+  }
+  table.data th, table.data td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  table.data th {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    color: var(--ink-soft);
+    font-weight: 600;
+  }
+  .overflow { overflow-x: auto; }
+
+  .pill {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 99px;
+    background: var(--accent-soft);
+    color: var(--accent);
+  }
+
+  .note {
+    background: var(--accent-soft);
+    border-radius: 14px;
+    padding: 16px 18px;
+    font-size: 14.5px;
+    color: var(--ink);
+    margin-top: 16px;
+  }
+
+  footer {
+    max-width: 720px;
+    margin: 40px auto 0;
+    color: var(--ink-soft);
+    font-size: 13.5px;
+  }
+</style>
+
+<div class="top">
+  <div class="eyebrow">Miraj</div>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: October 14, 2026</p>
+  <p class="lede">Miraj (also known as Psychologist Max) is a personal wellbeing app built around an AI coach, mood tracking, and optional sessions with licensed psychologists. This page explains, plainly, what we collect, why, and the choices you have.</p>
+</div>
+
+<nav class="toc" aria-label="Table of contents">
+  <p>On this page</p>
+  <ol>
+    <li><a href="#collect">1. What we collect</a></li>
+    <li><a href="#ai">2. How the AI coach works</a></li>
+    <li><a href="#device">3. Device permissions</a></li>
+    <li><a href="#share">4. Who sees your data</a></li>
+    <li><a href="#peer">5. Peer support & demo profiles</a></li>
+    <li><a href="#retention">6. Retention & deletion</a></li>
+    <li><a href="#rights">7. Your rights & choices</a></li>
+    <li><a href="#children">8. Age requirement</a></li>
+    <li><a href="#security">9. Security</a></li>
+    <li><a href="#contact">10. Contact us</a></li>
+  </ol>
+</nav>
+
+<main>
+  <section id="collect">
+    <h2><span class="n">01</span> What we collect</h2>
+    <p>We collect only what the app needs to work for you. Nothing here is sold, and none of it is used for advertising.</p>
+    <div class="overflow">
+      <table class="data">
+        <tr><th>Category</th><th>Examples</th><th>Why</th></tr>
+        <tr><td>Account</td><td>Email address, name, age, gender</td><td>Sign‑in, so your data follows you across devices</td></tr>
+        <tr><td>Wellbeing data</td><td>Diagnostic answers, mood check‑ins, growth plan, journal &amp; chat content</td><td>Personalizing your AI coach, tracking your progress</td></tr>
+        <tr><td>Photos</td><td>Profile photo (optional)</td><td>Shown on your profile and, if you book a session, to your psychologist</td></tr>
+        <tr><td>Voice</td><td>Microphone audio, converted to text on‑device</td><td>Lets you talk to the AI coach instead of typing</td></tr>
+        <tr><td>Usage</td><td>Streaks, completed tasks, app interactions</td><td>Progress tracking, gamification</td></tr>
+      </table>
+    </div>
+    <p class="soft">We don't request your precise location, contacts, or advertising identifiers, and the app contains no third‑party ad or analytics trackers. Some of the data above is shared with a third‑party AI service, but only after you give permission - see section 2.</p>
+  </section>
+
+  <section id="ai">
+    <h2><span class="n">02</span> How the AI coach works &amp; AI data sharing</h2>
+    <p>Replies from the AI coach, your self‑assessment results, growth plan, daily routine and progress check‑ins are generated by a third‑party AI provider: <strong>Anthropic</strong> (Claude), located in the United States. <strong>Before any data is sent, the app asks for your permission</strong> in a dedicated screen, and you can withdraw it at any time in the Profile screen. Without permission the AI features stay unavailable and the rest of the app keeps working.</p>
+    <p>When you use an AI feature, the app sends the following data to Anthropic:</p>
+    <ul>
+      <li>your messages and your recent chat history;</li>
+      <li>your name, age, gender, app level and points;</li>
+      <li>your self‑assessment and onboarding answers (for example concerns, mood, sleep, activity and goals);</li>
+      <li>your gratitude journal entries for the current day;</li>
+      <li>the app language you selected.</li>
+    </ul>
+    <p>We do <strong>not</strong> send your email address, password, profile photo, location or device identifiers to the AI provider.</p>
+    <p><strong>How it is used:</strong> only to generate responses for you inside the app. We do not use it for advertising and we never sell it.</p>
+    <p><strong>How it reaches Anthropic:</strong> requests pass through our own secure server (hosted on Vercel), which verifies your sign‑in, forwards the request to Anthropic and returns the reply. Our server does not store the content of your messages, and the Anthropic API key is kept only on that server.</p>
+    <p><strong>Protection by the provider:</strong> Anthropic processes this data to provide the service under its commercial API terms, which require equal protection of the data, and does not use data sent through its API to train its models. Anthropic may keep data for a limited period to provide the service and to detect abuse, as described in its own privacy policy.</p>
+    <p>The AI coach is <strong>not a licensed therapist</strong> and does not provide medical diagnosis. If you're in crisis or need professional care, contact a licensed psychologist through the booking feature or your local emergency service.</p>
+  </section>
+
+  <section id="device">
+    <h2><span class="n">03</span> Device permissions</h2>
+    <p>The app asks for permission only at the moment a feature needs it, and every permission is optional — the rest of the app works without it.</p>
+    <ul>
+      <li><span class="pill">Microphone &amp; Speech</span> to talk to the AI coach by voice instead of typing.</li>
+      <li><span class="pill">Photo Library</span> to set a profile picture.</li>
+      <li><span class="pill">Notifications</span> to remind you about the day's plan you asked us to build.</li>
+    </ul>
+  </section>
+
+  <section id="share">
+    <h2><span class="n">04</span> Who sees your data</h2>
+    <p>Your data is stored on Google Firebase (Firestore &amp; Authentication), which processes it on our behalf under its own data‑processing terms. Our AI request server is hosted on Vercel, and AI replies are generated by Anthropic (see section 2). If you book a session with a licensed psychologist through the app, that psychologist sees what's needed to help you: your name, photo, and the notes you choose to share — never your private AI chat history.</p>
+    <p class="soft">We do not sell personal data, and we do not share it with data brokers or advertisers.</p>
+  </section>
+
+  <section id="peer">
+    <h2><span class="n">05</span> Peer support &amp; demo profiles</h2>
+    <p>The "Find People" section is an early, safety‑moderated space for connecting with others working on similar goals. While the community is small, some profiles are clearly‑labeled example companions rather than other users. Messages you send are checked by an automated safety filter before being stored.</p>
+  </section>
+
+  <section id="retention">
+    <h2><span class="n">06</span> Retention &amp; deletion</h2>
+    <p>We keep your data for as long as your account is active. Ordinary chat history is periodically cleared; your growth plan, diagnostic, and journal entries are kept so your progress isn't lost, until you delete them.</p>
+    <p>You can request full deletion of your account and everything tied to it at any time — see <a href="#contact">Contact us</a>.</p>
+  </section>
+
+  <section id="rights">
+    <h2><span class="n">07</span> Your rights &amp; choices</h2>
+    <p>Depending on where you live, you may have the right to access, correct, export, or delete your personal data, and to object to or restrict certain processing. To exercise any of these, email us — we respond to every request personally.</p>
+  </section>
+
+  <section id="children">
+    <h2><span class="n">08</span> Age requirement</h2>
+    <p>Psychologist Max deals with mental health topics and is intended for users aged <strong>17 and older</strong>. We do not knowingly collect data from children. If you believe a minor has created an account, contact us and we'll remove it.</p>
+  </section>
+
+  <section id="security">
+    <h2><span class="n">09</span> Security</h2>
+    <p>Data in transit is encrypted (HTTPS/TLS). Access to production data is restricted, and authentication is handled by Firebase Authentication. No method of storage or transmission is 100% secure, but we work to protect your information at every layer we control.</p>
+    <div class="note">This policy may be updated as the app evolves. Meaningful changes will be reflected here with a new "last updated" date.</div>
+  </section>
+
+  <section id="contact">
+    <h2><span class="n">10</span> Contact us</h2>
+    <p>Questions, requests, or concerns about your data:</p>
+    <p><a href="mailto:privacy@psychologistmax.app">privacy@psychologistmax.app</a></p>
+  </section>
+</main>
+
+<footer>
+  © 2026 Miraj. This page is also available in Russian and Tajik on request.
+</footer>
