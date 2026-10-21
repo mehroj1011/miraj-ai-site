@@ -14,10 +14,10 @@
   var ICONS = ["💬","🧭","🎯","🗓️","🧘","📓","🤝","👩‍⚕️","🩺"];
 
   var NUM = {
-    assump: [["a1","9 837","src_author"],["a2","US$ 5,00","src_author"],["a3","19 872","src_author"],["a4","a4v","src_policy"],["a5","a5v","src_rules"],["a6","a6v","src_est"],["a7","12","src_est"],["a8","US$ 0,01455","src_est"]],
+    assump: [["a1","9 837","src_author"],["a2","5,00 с.","src_author"],["a3","19 872","src_author"],["a4","a4v","src_policy"],["a5","a5v","src_rules"],["a6","a6v","src_est"],["a7","12","src_est"],["a8","0,01455 с.","src_est"]],
     costs: [["c1","15 561"],["c2","2 000"],["c3","600"],["c4","240"],["c5","124"],["c6","1 853"],["c_ops","20 378","tot"],["c_labor","8 000"],["c_total","28 378","tot"]],
     income: [["i1","49 185,00"],["i2","− 7 377,75"],["i3","41 807,25","tot"],["i4","i4v"]],
-    result: [["r1","US$ 13 429"],["r2","US$ 21 429"],["r3","47,3%"],["r4","r4v"],["r5","r5v"]],
+    result: [["r1","13 429 с."],["r2","21 429 с."],["r3","47,3%"],["r4","r4v"],["r5","r5v"]],
     sens: [["s1","41 807","28 378","13 429","47,3%"],["s2","34 430","28 378","6 052","21,3%"],["s3","41 807","38 647","3 160","8,2%"],["s4","20 906","25 542","− 4 636","− 18,2%"]]
   };
 
@@ -33,9 +33,9 @@
     var out = "";
     out += table(t("t_assump"), [{t:t("th_param")},{t:t("th_value"),n:1},{t:t("th_src")}],
       NUM.assump.map(function (r) { return "<tr><td>" + t(r[0]) + "</td><td class='num'>" + val(r[1]) + "</td><td>" + t(r[2]) + "</td></tr>"; }).join(""));
-    out += table(t("t_costs"), [{t:t("th_item")},{t:"US$",n:1}],
+    out += table(t("t_costs"), [{t:t("th_item")},{t:"с.",n:1}],
       NUM.costs.map(function (r) { return "<tr" + (r[2] ? " class='tot'" : "") + "><td>" + t(r[0]) + "</td><td class='num'>" + r[1] + "</td></tr>"; }).join(""));
-    out += table(t("t_income"), [{t:t("th_item")},{t:"US$",n:1}],
+    out += table(t("t_income"), [{t:t("th_item")},{t:"с.",n:1}],
       NUM.income.map(function (r) { return "<tr" + (r[2] ? " class='tot'" : "") + "><td>" + t(r[0]) + "</td><td class='num'>" + val(r[1]) + "</td></tr>"; }).join(""));
     out += table(t("t_result"), [{t:t("th_param")},{t:t("th_value"),n:1}],
       NUM.result.map(function (r) { return "<tr><td>" + t(r[0]) + "</td><td class='num'>" + val(r[1]) + "</td></tr>"; }).join(""));

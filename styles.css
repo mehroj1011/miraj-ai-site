@@ -114,3 +114,43 @@ footer{padding:36px 0 60px;border-top:1px solid var(--line);color:var(--soft);fo
 .btn.big{display:block;padding:14px 20px;font-size:17px;margin:4px 0 12px}
 .sheet code{background:var(--asoft);padding:2px 8px;border-radius:8px;word-break:break-all;font-size:11px;display:inline-block;max-width:100%}
 .copy{border:1px solid var(--line);background:var(--card);color:var(--a);border-radius:8px;padding:2px 8px;font-size:12px;cursor:pointer;margin-left:4px}
+
+/* ---------- Mobile ---------- */
+.mnav{display:none}
+@media(max-width:760px){
+  body{font-size:16px}
+  .wrap{padding:0 16px}
+  .top .wrap{height:56px;gap:10px}
+  .brand span{font-size:16px}
+  .mnav{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;padding:8px 16px;border-top:1px solid var(--line);background:color-mix(in srgb,var(--bg) 92%,transparent)}
+  .mnav::-webkit-scrollbar{display:none}
+  .mnav a{flex:none;color:var(--soft);text-decoration:none;font-size:14px;padding:7px 12px;border-radius:999px;background:var(--card);border:1px solid var(--line)}
+  .mnav a:active{background:var(--asoft);color:var(--a)}
+  .hero{padding:34px 0 26px}
+  .hero .phone{display:block}
+  .hero .phone img{max-width:210px}
+  h1{font-size:40px}
+  .cta .btn{flex:1 1 100%;text-align:center}
+  section{padding:38px 0}
+  section h2{font-size:25px}
+  .lead2{font-size:16px;margin-bottom:18px}
+  .cards{grid-template-columns:1fr}
+  .stat .n{font-size:26px}
+  .shots img{height:360px}
+  .stores{flex-direction:column}
+  .store{width:100%}
+  .links{flex-direction:column}
+  .links .btn{text-align:center}
+  table{font-size:13.5px}
+  th,td{padding:8px 9px}
+  .tw{margin-left:-4px;margin-right:-4px}
+  .arch{padding:10px}
+  .bar{grid-template-columns:84px 1fr 62px;font-size:13px}
+  .warnbox{padding:12px 13px;font-size:14px}
+  .sheet{padding:22px 18px 18px;border-radius:20px}
+  .modal{align-items:flex-end;padding:0}
+  .sheet{max-width:none;border-bottom-left-radius:0;border-bottom-right-radius:0;animation:slide .22s ease-out}
+  @keyframes slide{from{transform:translateY(40px);opacity:0}to{transform:none;opacity:1}}
+  footer{padding:26px 0 48px}
+}
+@media(max-width:380px){h1{font-size:34px}.lang button{padding:7px 9px}}
