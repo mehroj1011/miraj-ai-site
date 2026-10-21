@@ -154,3 +154,7 @@ footer{padding:36px 0 60px;border-top:1px solid var(--line);color:var(--soft);fo
   footer{padding:26px 0 48px}
 }
 @media(max-width:380px){h1{font-size:34px}.lang button{padding:7px 9px}}
+
+.sheet details{text-align:left;margin-top:6px}
+.sheet summary{cursor:pointer;color:var(--soft);text-align:center;list-style:none}
+.sheet summary::-webkit-details-marker{display:none}
